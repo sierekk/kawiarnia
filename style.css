@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #F5EFE7;
+    font-family: Arial;
+    scroll-behavior: smooth;
+}
+header, footer{
+    background-color: #3A2A22;
+    color: #FFFFFF;
+    margin-bottom: 2px;
+}
+a{
+    text-decoration: none;
+}
+.sprawdz{
+    display: inline-block;
+    color:#F5EFE7;
+    padding: 10px;
+    background-color: #6F3E2C; 
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#zdjecie{
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px;
+   
+}
+#onas{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+#opis{
+    text-align: center;
+    padding: 20px;
+    max-width: 70%;
+
+}
+#menu{
+    text-align: center;
+}
+
+#promocje{
+    text-align: center;
+    
+}
+.kontener{
+    display: flex;
+    justify-content: center;
+    gap: 100px
+}
+.kontener-opinie{
+    display: flex;
+    justify-content: center;
+    gap: 100px
+}
+.kontener-promocje{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px
+}
+.produkt{
+    padding: 20px;
+    margin: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.produkt, 
+.promocja,
+.opinia{
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.promocja{
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.opinie{
+    flex-direction: column;
+    gap: 50px;
+}
+#ludzie{
+    max-height: 100%;
+    width: auto;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+#opinie{
+    text-align: center;
+}
+.opinia{
+    padding: 30px;
+    max-width: 50%;
+    margin-left: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+h1,h2,h3{
+    font-family: Georgia;
+    margin: 15px;
+}
+.lokalizacja{
+    padding: 10px;
+    margin: 10px;
+    max-width: 30%;
+    text-align: center;
+}
+.cta{
+    display: inline-block; 
+    text-decoration: none;
+    background-color: #6F3E2C;
+    padding: 8px;
+    color: #F5EFE7;
+    border-radius: 10px;
+    font-size: 110%;
+    transition: 0.2s;
+}
+
+header{
+    padding: 20px;
+    text-align: center;
+    font-size: 120%;
+}
+.socjal{
+    height: 30px;
+    width: auto;
+}
+footer{
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.made{
+    float: right;
+}
+.powrot{
+    float: right;
+    padding: 2px;
+}
+.socjale{
+    gap: 5px;
+    justify-content: center;
+    max-width: 8%;
+}
+.powrot{
+    padding: 10px;
+    color:  #F5EFE7;
+    background-color: #6F3E2C;
+    border-radius: 10px;
+}
+@media (max-width: 768px){
+    #onas{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #Widok{
+    display: flex;
+    justify-content: center;
+    }
+    #zdjecie{
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin: 5px,5px;
+    }
+    
+    .menu{
+        gap: 15px;
+        justify-content: space-around;
+        margin: 5px;
+    }
+    .promocja{
+        margin: 5px;
+        max-width: 90%;
+    }
+    .kontener-promocje{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .kontener-opinie{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .opinia{
+        margin: 0 auto;
+    }
+    .lokalizacja{
+        max-width: 100%;
+        text-align: center;
+    }
+    .socjale{
+        max-width: 30%;
+    }
+}
+
+@media (hover:hover) and (pointer: fine){
+    .cta:hover{
+    transform: scale(1.05);
+    font-weight: bold;
+    text-decoration: underline;
+    }
+    .opinia:hover{
+    transform: scale(1.05);
+    }
+    #ludzie:hover{
+    transform: scale(1.05);
+    }
+    .sprawdz:hover{
+    transform: scale(1.05);
+    font-weight: bold;
+    }
+    .produkt:hover{
+    transform: scale(1.05);
+    }
+}
+
+ section{
+  animation: fadeIn 0.8s ease forwards;
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}  
+/* to jest skopiowane totalnie, musze obczaic o co tu chodzi, ale ladnie wyglada  */
